@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box
+        {
+            width: 250px;
+            aspect-ratio: 1/1;
+            border: 1px solid #000;
+            background-color: crimson;
+            animation-name:abc;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+            position: relative;
+
+        }
+
+        @keyframes abc
+        {
+            10%
+            {
+                background-color: aqua;
+                border-radius: 10%;
+                left: 0;
+                top: 0;
+            }
+            20%
+            {
+                background-color:blueviolet;
+                border-radius: 20%;
+                left:300px;
+                top: 0;
+
+            }
+            30%
+            {
+                background-color: aqua;
+                border-radius: 30%;
+                left:300px;
+                top:300;
+
+            }
+            40%
+            {
+                background-color:crimson;
+                border-radius: 40%;
+                left:0;
+                top: 300px;
+
+            }
+            50%
+            {
+                background-color: blue;
+                border-radius: 50%;
+                left:300px;
+                top: 0;
+
+            }
+            60%
+            {
+                background-color:green;
+                border-radius: 60%;
+                left: 20%;
+                top: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+       
+    </div>
+</body>
+</html>
